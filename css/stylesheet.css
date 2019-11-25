@@ -1,6 +1,7 @@
 /* =============================================================================
    HTML5 CSS Reset Minified - Eric Meyer
    ========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500&display=swap');
 
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1}
@@ -64,7 +65,7 @@ canvas{
   -webkit-transform: translate(-50%, -40%);
   transform: translateX(-50%, -40%);
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -86,9 +87,8 @@ canvas{
 #links-container {
   display: flex;
   justify-content: space-around;
-  background-color: #000;
   padding: 10px;
-  height: 50px;
+  height: 30px;
   opacity: 0.4;
 }
 
@@ -102,4 +102,23 @@ canvas{
 
 #links-container a:hover {
   font-size: 2.25em;
+}
+
+#lower {
+  background-color: #000;
+  opacity: 0.4;
+}
+
+#description {
+  color: #fff;
+  padding: 7.5%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  #description {
+    font-size: 0.85em;
+  }
 }
