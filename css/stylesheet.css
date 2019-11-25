@@ -89,12 +89,10 @@ canvas{
   justify-content: space-around;
   padding: 10px;
   height: 30px;
-  opacity: 0.4;
 }
 
 #links-container a {
   text-decoration: none;
-  color: #fff;
   font-size: 2em;
   padding: 10px;
   transition: 0.2s;
@@ -106,7 +104,7 @@ canvas{
 
 #lower {
   background-color: #000;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 #description {
@@ -121,4 +119,20 @@ canvas{
   #description {
     font-size: 0.85em;
   }
+}
+
+.fa-github {
+  color: #fff;
+}
+
+.fa-linkedin {
+  color: #2A75B3;
+}
+
+.fa-twitter {
+  color: #409EF0;
+}
+
+.fa-envelope-o {
+  color: #D1282D;
 }
