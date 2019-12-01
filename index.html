@@ -28,8 +28,16 @@
     </div>
     <!-- particles.js container -->
     <div id="particles-js"></div>
-
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <!-- scripts -->
+    <script src="js/jquery-min.js"></script>
+    <script>
+      $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+      });
+    </script>
     <script src="particles-js/particles.js"></script>
     <script src="js/app.js"></script>
     <script src="https://use.fontawesome.com/fc141e9b31.js"></script>
