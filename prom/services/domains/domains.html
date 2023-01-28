@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Domain Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700">
+    <script src="../nav.js" defer></script>
+  </head>
+  <body>
+    <div class="header_nav">
+      <nav expanded="false">
+        <img src="../../logo.png" alt="logo.png">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../domains/domains.html">Domains</a></li>
+          <li><a href="../hosting/hosting.html">Hosting</a></li>
+          <li><a href="../servers/servers.html">Servers</a></li>
+          <li><a href="../contact/contact.html">Contact</a></li>
+          <li><a href="#">Buy Now</a></li>
+        </ul>
+      </nav>
+      <button class="menu_button" name="menu"></button>
+      <div class="container">
+        <div class="title">
+          <h2>Domain Transfer Services</h2>
+          <p>Check out our domain services!</p>
+        </div>
+      </div>
+    </div>
+    <style>
+      html {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Dosis";
+        margin: 0;
+        padding: 0;
+        height: auto;
+      }
+
+      .header_nav {
+        background-image: url("../../circle-scatter.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .header_nav > nav {
+        width: 80%;
+        display: flex;
+        padding: 20px 10%;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 9999;
+      }
+
+      .header_nav > nav > img {
+        margin: 10px 5%;
+      }
+
+      .header_nav > nav > ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 40%;
+        list-style-type: none;
+      }
+
+      .header_nav > nav > ul > li > a {
+        color: white;
+        font-family: "Josefin Sans";
+        font-size: 17px;
+        font-weight: 400;
+        text-decoration: none;
+      }
+
+      .header_nav > .menu_button {
+        display: none;
+      }
+
+      .header_nav > .container {
+        width: 100%;
+      }
+
+      .header_nav > .container > .title {
+        height: 250px;
+        width: 100%;
+        margin-left: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .header_nav > .container > .title > h2 {
+        margin: 5px 15px;
+        color: white;
+        font-family: "Advent Pro";
+        font-size: 45px;
+        font-weight: 700;
+        border-radius: 5px;
+      }
+
+      .header_nav > .container > .title > p:nth-child(2) {
+        width: max-content;
+        margin: 5px 15px;
+        padding: 2px 10px;
+        background-color: #9018A1;
+        color: white;
+        font-family: "Advent Pro";
+        font-size: 25px;
+        font-weight: 600;
+        border-radius: 5px;
+      }
+
+
+      @media only screen and (max-width:1000px) {
+         .header_nav > .title > h2 {
+           width: auto;
+           margin: 0 5%;
+         }
+
+         .header_nav > .container > .title {
+           padding: 10%;
+           margin: auto;
+         }
+
+         .header_nav > nav {
+           position: fixed;
+           display: flex;
+           flex-direction: column;
+           align-items: flex-start;
+           justify-content: space-around;
+           padding: 10%;
+           inset: 0 0 0 30%;
+           background-color: #6800ffd6;
+           z-index: 9999;
+           transform: translateX(100%);
+           transition: transform  0.25s ease-out;
+         }
+
+         .header_nav > nav > img {
+           display: none;
+         }
+
+         .header_nav > nav > ul {
+           padding: 0 0 100px 0;
+           display: flex;
+           gap: 50px;
+           flex-direction: column;
+           justify-content: flex-start;
+           list-style-type: none;
+         }
+
+         .header_nav > nav > ul > li > a {
+           font-family: "Josefin Sans";
+           font-size: 20px;
+           font-weight: 500;
+         }
+
+         .header_nav > .menu_button {
+           display: block;
+           position: fixed;
+           z-index: 99999;
+           top: 20px;
+           right: 30px;
+           border: none;
+           aspect-ratio: 1;
+           width: 40px;
+           background-image: url("../../menu.svg");
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-color: transparent;
+         }
+      }
+
+       @media only screen and (max-width:500px) {
+         .header_nav > .container > .title {
+           width: auto;
+         }
+
+         .header_nav > .container > .title > p:nth-child(2) {
+           width: auto;
+         }
+       }
+    </style>
+     <div class="main_body">
+       <div class="domains">
+         <div class="title">
+           <h3>BUILD YOUR BUSINESS ON A GREAT BRAND...</h3>
+           <p>Free wildcards for safer data transfers. Free 2GB email accounts. Free private registration for more privacy.</p>
+         </div>
+         <div class="container">
+           <div class="domain">
+             <img src="./dot-com.svg" alt="">
+             <div class="pricing">
+               <p><span>$</span>13.<span>00</span><span>/mo</span></p>
+               <p>1<span>st</span> year</p>
+             </div>
+             <a href="#">Transfer</a>
+           </div>
+           <div class="domain">
+             <img src="./dot-info.svg" alt="">
+             <div class="pricing">
+               <p><span>$</span>13.<span>00</span><span>/mo</span></p>
+               <p>1<span>st</span> year</p>
+             </div>
+             <a href="#">Transfer</a>
+           </div>
+           <div class="domain">
+             <img src="./dot-net.svg" alt="">
+             <div class="pricing">
+               <p><span>$</span>33.<span>00</span><span>/mo</span></p>
+               <p>1<span>st</span> year</p>
+             </div>
+             <a href="#">Transfer</a>
+           </div>
+           <div class="domain">
+             <img src="./dot-org.svg" alt="">
+             <div class="pricing">
+               <p><span>$</span>40.<span>00</span><span>/mo</span></p>
+               <p>1<span>st</span> year</p>
+             </div>
+             <a href="#">Transfer</a>
+           </div>
+         </div>
+       </div>
+       <style>
+         .main_body > .domains > .container {
+           width: 80%;
+           padding: 100px 10%;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-evenly;
+         }
+
+          .main_body > .domains > .title {
+             margin: 100px auto 30px auto;
+          }
+
+         .main_body > .domains > .title > h3 {
+           font-family: "Advent Pro";
+           font-size: 40px;
+           text-align: center;
+           color: #1875F9;
+         }
+
+         .main_body > .domains > .title > p {
+           text-align: center;
+           color: #4d4d4d;
+           font-size: 20px;
+           font-weight: 500;
+         }
+
+         .main_body > .domains > .container > .domain {
+           height: 250px;
+           width: 10%;
+           display: flex;
+           align-items: center;
+           flex-direction: column;
+           justify-content: space-around;
+           padding: 4%;
+           border-radius: 5px;
+           box-shadow: 0px 0px 25px #888;
+         }
+
+         .main_body > .domains > .container > .domain > img:first-child {
+           width: 100px;
+         }
+
+         .main_body > .domains > .container > .domain > .pricing:nth-child(2) > p {
+           margin: 0;
+         }
+
+         .main_body > .domains > .container > .domain > .pricing:nth-child(2) > p:first-child {
+           font-size: 30px;
+           font-weight: 600;
+         }
+
+         .main_body > .domains > .container > .domain > .pricing:nth-child(2) > p:nth-child(2) {
+           font-size: 15px;
+           text-align: center;
+         }
+
+         .main_body > .domains > .container > .domain > .pricing:nth-child(2) > p:first-child > span:first-child {
+           font-size: 15px;
+           vertical-align: super;
+         }
+
+         .main_body > .domains > .container > .domain > .pricing:nth-child(2) > p:first-child > span:nth-child(2) {
+           font-size: 15px;
+           vertical-align: super;
+         }
+
+         .main_body > .domains > .container > .domain > .pricing:nth-child(2) > p:first-child > span:last-child {
+           font-size: 10px;
+           vertical-align: baseline;
+         }
+
+         .main_body > .domains > .container > .domain > a {
+           width: 80px;
+           text-decoration: none;
+           font-family: "Josefin Sans";
+           font-size: 18px;
+           text-align: center;
+           color: white;
+           background-color: #D1088B;
+           padding: 10px;
+           border-radius: 10px;
+           /* box-shadow: 0px 0px 3px #D1088B; */
+         }
+
+         @media only screen and (max-width:1000px) {
+            .main_body > .domains > .title > h3 {
+              width: auto;
+              margin: 0 5%;
+            }
+
+            .main_body > .domains > .title > p {
+              margin: 5%;
+            }
+
+            .main_body > .domains > .container {
+              flex-direction: column;
+              gap: 20px;
+              padding: 10%;
+            }
+            .main_body > .domains > .container > .domain {
+              width: auto;
+            }
+         }
+       </style>
+       <div class="block">
+         <div class="container">
+           <div class="domain">
+             <p>.info</p>
+             <p>$13/ 1<span>st</span>year</p>
+           </div>
+           <div class="domain">
+             <p>.me</p>
+             <p>$13/ 1<span>st</span>year</p>
+           </div>
+           <div class="domain">
+             <p>.site</p>
+             <p>$13/ 1<span>st</span>year</p>
+           </div>
+           <div class="domain">
+             <p>.online</p>
+             <p>$33/ 1<span>st</span>year</p>
+           </div>
+           <div class="domain">
+             <p>.club</p>
+             <p>$40/ 1<span>st</span>year</p>
+           </div>
+           <div class="domain">
+             <p>.xyz</p>
+             <p>$40/ 1<span>st</span>year</p>
+           </div>
+           <div class="domain">
+             <p>.tech</p>
+             <p>$64/ 1<span>st</span>year</p>
+           </div>
+         </div>
+       </div>
+       <style>
+         .main_body > .block > .container {
+           display: flex;
+           margin: auto 15%;
+           flex-direction: row;
+           align-items: center;
+           justify-content: space-evenly;
+           border-radius: 15px;
+           background-color: #251257;
+         }
+
+         .main_body > .block > .container > .domain {
+           padding: 20px;
+         }
+
+         .main_body > .block > .container > .domain > p {
+           width: 100%;
+           margin: 5px 0;
+           color: white;
+           font-size: 18px;
+           font-weight: 500;
+           text-align: center;
+         }
+
+         .main_body > .block > .container > .domain > p:first-child {
+           font-weight: 600;
+           padding-bottom: 5px;
+           border-bottom: solid 2px #6bd4f7;
+         }
+
+         .main_body > .block > .container > .domain > p:last-child {
+           font-family: "Josefin Sans";
+           font-size: 18px;
+           color: #6bd4f7;
+         }
+
+         .main_body > .block > .container > .domain > p:last-child > span {
+           font-size: 12px;
+           vertical-align: super;
+         }
+
+         @media only screen and (max-width:1000px) {
+            .main_body > .block > .container {
+              display: none;
+            }
+         }
+       </style>
+       <div class="tld-domains">
+         <div class="title">
+           <h3>Domains as original as your ideas</h3>
+           <p>Exclusive prices on some of the freshest domains.</p>
+         </div>
+         <div class="container">
+           <div class="domain">
+             <img src="./dot-shop.svg" alt="">
+             <div class="pricing">
+               <p><span>$</span>13.<span>00</span><span>/mo</span></p>
+               <p>1<span>st</span> year</p>
+             </div>
+             <a href="#">Transfer a .shop domain</a>
+           </div>
+           <div class="domain">
+             <img src="./dot-online.svg" alt="">
+             <div class="pricing">
+               <p><span>$</span>33.<span>00</span><span>/mo</span></p>
+               <p>1<span>st</span> year</p>
+             </div>
+             <a href="#">Transfer a .online domain</a>
+           </div>
+           <div class="domain">
+             <img src="./dot-co.svg" alt="">
+             <div class="pricing">
+               <p><span>$</span>33.<span>00</span><span>/mo</span></p>
+               <p>1<span>st</span> year</p>
+             </div>
+             <a href="#">Transfer a .co domain</a>
+           </div>
+         </div>
+         <div class="title">
+           <h3>Trending TLDs</h3>
+           <p>Get your startup, site, or app online.</p>
+         </div>
+         <div class="container">
+           <div class="domain">
+             <img src="./dot-io.svg" alt="">
+             <div class="pricing">
+               <p><span>$</span>40.<span>00</span><span>/mo</span></p>
+               <p>1<span>st</span> year</p>
+             </div>
+             <a href="#">Transfer a .io domain</a>
+           </div>
+           <div class="domain">
+             <img src="./dot-xyz.svg" alt="">
+             <div class="pricing">
+               <p><span>$</span>40.<span>00</span><span>/mo</span></p>
+               <p>1<span>st</span> year</p>
+             </div>
+             <a href="#">Transfer a .xyz domain</a>
+           </div>
+           <div class="domain">
+             <img src="./dot-tech.svg" alt="">
+             <div class="pricing">
+               <p><span>$</span>64.<span>00</span><span>/mo</span></p>
+               <p>1<span>st</span> year</p>
+             </div>
+             <a href="#">Transfer a .tech domain</a>
+           </div>
+         </div>
+       </div>
+       <style>
+        .main_body > .tld-domains {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+         .main_body > .tld-domains > .container {
+           width: 80%;
+           padding: 100px 10%;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-evenly;
+           gap: 20px;
+         }
+
+          .main_body > .tld-domains > .title {
+             margin: 120px auto 30px auto;
+          }
+
+          .main_body > .tld-domains > .title:nth-child(3) {
+            margin: 30px auto;
+          }
+
+         .main_body > .tld-domains > .title > h3 {
+           width: max-content;
+           margin: 0;
+           padding: 5px 15px;
+           background-color: #9018A1;
+           color: white;
+           font-family: "Advent Pro";
+           font-size: 40px;
+           font-weight: 700;
+           text-align: center;
+           border-radius: 5px;
+         }
+
+         .main_body > .tld-domains > .title > p {
+           text-align: center;
+           color: #4d4d4d;
+           font-size: 20px;
+           font-weight: 500;
+         }
+
+         .main_body > .tld-domains > .container > .domain {
+           height: 300px;
+           display: flex;
+           align-items: center;
+           flex-direction: column;
+           justify-content: space-between;
+           padding: 5%;
+           border-radius: 5px;
+           box-shadow: 0px 0px 25px #888;
+         }
+
+         .main_body > .tld-domains > .container > .domain > img:first-child {
+           width: 200px;
+         }
+
+         .main_body > .tld-domains > .container > .domain > .pricing:nth-child(2) > p {
+           margin: 0;
+         }
+
+         .main_body > .tld-domains > .container > .domain > .pricing:nth-child(2) > p:first-child {
+           font-size: 40px;
+           font-weight: 700;
+         }
+
+         .main_body > .tld-domains > .container > .domain > .pricing:nth-child(2) > p:first-child > span:first-child {
+           font-size: 20px;
+           vertical-align: super;
+         }
+
+         .main_body > .tld-domains > .container > .domain > .pricing:nth-child(2) > p:first-child > span:nth-child(2) {
+           font-size: 20px;
+           vertical-align: super;
+         }
+
+         .main_body > .tld-domains > .container > .domain > .pricing:nth-child(2) > p:first-child > span:last-child {
+           font-size: 15px;
+           vertical-align: baseline;
+         }
+
+         .main_body > .tld-domains > .container > .domain > .pricing:nth-child(2) > p:nth-child(2) {
+           font-size: 15px;
+           text-align: center;
+         }
+
+         .main_body > .tld-domains > .container > .domain > a {
+           /* width: 80px; */
+           text-decoration: none;
+           font-family: "Josefin Sans";
+           text-align: center;
+           /* color: white; */
+           /* background-color: #D1088B; */
+           padding: 7px;
+           border-radius: 10px;
+           border: 3px solid #9018A1;
+         }
+
+         @media only screen and (max-width:1000px) {
+            .main_body > .tld-domains > .container {
+              flex-direction: column;
+              gap: 20px;
+              padding: 10%;
+            }
+
+            .main_body > .tld-domains > .title > h3 {
+              width: auto;
+              margin: 0 10%;
+            }
+
+            .main_body > .tld-domains > .title > p {
+              margin: 5%;
+            }
+
+            .main_body > .tld-domains > .title,
+            .main_body > .tld-domains > .title:nth-child(3) {
+              margin: auto;
+            }
+         }
+       </style>
+       <div class="hosting_features">
+         <div class="title">
+           <h3>More than just a domain name</h3>
+           <p>Register your domain with Prometheus and benefit from our comprehensive features.</p>
+         </div>
+         <div class="container">
+           <div class="feature">
+             <div class="image">
+               <img src="./email.svg" alt="security.svg">
+             </div>
+             <p>A professional email address (for example: me@mycompany.com) connected to your domain with 2 GB of mailbox space to start. Upgrade any time for more space.</p>
+           </div>
+           <div class="feature">
+             <div class="image">
+               <img src="./security.svg" alt="speed.svg">
+             </div>
+             <p>For reliable protection of your website visitors and to increase your Google ranking, one Wildcard SSL certificate is included with your initial contract.</p>
+           </div>
+           <div class="feature">
+             <div class="image">
+               <img src="./subdomains.svg" alt="subdomains.svg">
+             </div>
+             <p>Up to 10,000 subdomains to customize and structure your website, for example: news.mycompany.com.</p>
+           </div>
+           <div class="feature">
+             <div class="image">
+               <img src="./setup.svg" alt="uptime.svg">
+             </div>
+             <p>One-click activation makes it easy to connect your domain with email, hosting, or social media profiles.</p>
+           </div>
+           <div class="feature">
+             <div class="image">
+               <img src="./lock.svg" alt="dedicated-hosting.svg">
+             </div>
+             <p>The domain transfer lock ensures your domain cannot be transferred by unauthorized third parties.</p>
+           </div>
+           <div class="feature">
+             <div class="image">
+               <img src="./transfer.svg" alt="virtualization.svg">
+             </div>
+             <p>Prometheus makes transferring your domain easy. We make it even simpler by providing comprehensive guides and support for each step of the domain transfer process.</p>
+           </div>
+         </div>
+       </div>
+       <style>
+         .main_body > .hosting_features > .title > h3 {
+           font-size: 40px;
+           text-align: center;
+           color: #4d4d4d;
+         }
+
+         .main_body > .hosting_features > .title > p {
+           text-align: center;
+           color: #4d4d4d;
+           font-size: 20px;
+           font-weight: 500;
+         }
+         .main_body > .hosting_features > .container {
+           height: auto;
+           width: 80%;
+           padding: 20px 10%;
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           justify-content: space-around;
+           flex-wrap: wrap;
+         }
+
+         .main_body > .hosting_features > .container > .feature {
+           height: auto;
+           width: 20%;
+           padding: 5%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+         }
+
+         .main_body > .hosting_features > .container > .feature > .image {
+           height: auto;
+           width: 30%;
+           padding: 5%;
+         }
+
+         .main_body > .hosting_features > .container > .feature > p {
+           font-size: 18px;
+           text-align: center;
+         }
+
+         @media only screen and (max-width:1000px) {
+           .main_body > .hosting_features > .title {
+             margin: 5%;
+           }
+
+           .main_body > .hosting_features > .container > .feature {
+             width: 30%;
+           }
+         }
+       </style>
+       <div class="brand">
+         <div class="container">
+           <div class="text">
+             <p>BUILD, PROTECT AND GROW YOUR BRAND...</p>
+             <p>Build your brand</p>
+             <p>Build your brand with Prometheus by getting a memorable domain name that sets you apart from the crowd.
+               You can register a domain for up to 5 years, and thanks to the redemption period you do not have to
+               worry about your domain being registered by someone else the moment your contract ends.</p>
+             <p>Boost your online presence</p>
+             <p>Build a beautiful website, set up your professional email address, and either connect your social
+               profiles to your domain or simply forward visitors somewhere else, like your LinkedIn profile, or your
+               Instagram profile.</p>
+             <p>With a provider you can trust</p>
+             <p>We have a large portfolio of domain extensions available. From .academy to .zone, we have the
+               extension for you. You can also choose one of our premium domains to build your brand. With our
+               competitive prices, we are confident we can help you find the right domain on your budget.
+            </p>
+            <a href="#">Get Started</a>
+           </div>
+           <div class="image">
+             <img src="./ssl.svg" alt="brand.svg">
+           </div>
+         </div>
+       </div>
+       <style>
+          .main_body > .brand {
+            background-color: #f0f0f0;
+          }
+          .main_body > .brand > .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 5% 10%;
+          }
+
+          .main_body > .brand > .container > .image {
+            height: auto;
+            width: 40%;
+          }
+
+          .main_body > .brand > .container > .image > img {
+            height: auto;
+            width: 100%;
+          }
+
+          .main_body > .brand > .container > .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            width: 40%;
+            padding: 5%;
+          }
+
+          .main_body > .brand > .container > .text > p:first-child {
+            margin: 0 0 30px 0;
+            color: #D1088B;
+            font-family: "Josefin Sans";
+            font-size: 35px;
+            font-weight: 600;
+          }
+
+          .main_body > .brand > .container > .text > p:nth-child(2),
+          .main_body > .brand > .container > .text > p:nth-child(4),
+          .main_body > .brand > .container > .text > p:nth-child(6) {
+            margin: 0;
+            color:  #1875F9;
+            font-size: 22px;
+            font-weight: 600;
+          }
+
+          .main_body > .brand > .container > .text > p:nth-child(3),
+          .main_body > .brand > .container > .text > p:nth-child(5),
+          .main_body > .brand > .container > .text > p:nth-child(7) {
+            /* color: #4D4D4D; */
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 150%;
+          }
+
+          .main_body > .brand > .container > .text > a {
+            align-self: flex-end;
+            width: 80px;
+            text-decoration: none;
+            font-family: "Josefin Sans";
+            text-align: center;
+            color: white;
+            background-color: #D1088B;
+            padding: 7px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 3px #D1088B;
+          }
+
+          @media only screen and (max-width:1000px)  {
+            .main_body > .brand > .container {
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-around;
+              padding: 5%;
+            }
+
+            .main_body > .brand > .container > .image {
+              width: 60%;
+              margin-bottom: 10%;
+            }
+
+            .main_body > .brand > .container > .text {
+              height: 100%;
+              width: 70%;
+            }
+          }
+       </style>
+       <div class="ssl_secure">
+         <div class="container">
+           <div class="text">
+             <p>INCREASE TRUST WITH SSL</p>
+             <p>Why is SSL important?</p>
+             <p>An SSL certificate ensures all information transmitted to and from your website is protected from
+               third parties attempting to access it. It is important because browsers, like Google Chrome, mark pages
+               without https and the green padlock in the address bar as not secure. This can have a negative effect
+               on the trustworthiness of your website. Pages that are protected with SSL receive better search engine
+               rankings and are more likely to be trusted by visitors.</p>
+             <p>What is Wildcard SSL?</p>
+             <p>With Prometheus, your initial contract comes with one free Wildcard SSL certificate. While a standard SSL
+               certificate only protects one domain, a Wildcard SSL certificate protects the domain name, as well as
+               all of the related subdomains, like https://news.mycompany.com.</p>
+            <a href="#">Get Started</a>
+           </div>
+           <div class="image">
+             <img src="./ssl_secure.svg" alt="ssl_secure.svg">
+           </div>
+         </div>
+       </div>
+       <style>
+          .main_body > .ssl_secure > .container {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-around;
+            padding: 5% 10%;
+          }
+
+          .main_body > .ssl_secure > .container > .image {
+            height: auto;
+            width: 40%;
+          }
+
+          .main_body > .ssl_secure > .container > .image > img {
+            height: auto;
+            width: 100%;
+          }
+
+          .main_body > .ssl_secure > .container > .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            width: 40%;
+            padding: 5%;
+          }
+
+          .main_body > .ssl_secure > .container > .text > p:first-child {
+            margin: 0 0 30px 0;
+            color: #D1088B;
+            font-family: "Josefin Sans";
+            font-size: 35px;
+            font-weight: 600;
+          }
+
+          .main_body > .ssl_secure > .container > .text > p:nth-child(2),
+          .main_body > .ssl_secure > .container > .text > p:nth-child(4) {
+            margin: 0;
+            color:  #1875F9;
+            font-size: 22px;
+            font-weight: 600;
+          }
+
+          .main_body > .ssl_secure > .container > .text > p:nth-child(3),
+          .main_body > .ssl_secure > .container > .text > p:nth-child(5) {
+            color: #4D4D4D;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 150%;
+          }
+
+          .main_body > .ssl_secure > .container > .text > a {
+            align-self: flex-end;
+            width: 80px;
+            text-decoration: none;
+            font-family: "Josefin Sans";
+            text-align: center;
+            color: white;
+            background-color: #D1088B;
+            padding: 7px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 3px #D1088B;
+          }
+
+          @media only screen and (max-width:1000px)  {
+            .main_body > .ssl_secure > .container {
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-around;
+              padding: 5%;
+            }
+
+            .main_body > .ssl_secure > .container > .image {
+              width: 60%;
+              margin-bottom: 10%;
+            }
+
+            .main_body > .ssl_secure > .container > .text {
+              height: 100%;
+              width: 70%;
+            }
+          }
+       </style>
+       <div class="footer">
+         <div class="company">
+           <p>Company</p>
+           <a href="#">Services</a>
+           <a href="#">Contact Us</a>
+           <div class="social">
+             <a href="#"><img src="../../footer/facebook.svg" alt="facebook.svg"></a>
+             <a href="#"><img src="../../footer/twitter.svg" alt="twitter.svg"></a>
+             <a href="#"><img src="../../footer/linkedin.svg" alt="linkedin.svg"></a>
+           </div>
+         </div>
+         <div class="services">
+           <p>Services</p>
+           <a href="#">Web Hosting</a>
+           <a href="#">VPS Server</a>
+           <a href="#">Dedicated Server</a>
+         </div>
+         <div class="others">
+           <p>Others</p>
+           <a href="#">Domain Transfer</a>
+           <a href="#">Deploy Now</a>
+           <a href="#">Plex Portal</a>
+           <a href="#">CPanel Portal</a>
+         </div>
+         <div class="contact">
+           <p>Contact</p>
+           <a href="#"><span><img src="../../footer/phone.svg" alt="phone.svg"></span><span>002-0356-4589</span></a>
+           <a href="#"><span><img src="../../footer/email.svg" alt="email.svg"></span><span>prometheus@gmail.com</span></a>
+           <a href="#"><span><img src="../../footer/location.svg" alt="location.svg"></span><span>Somewhere in Africa</span></a>
+         </div>
+       </div>
+       <style>
+         .main_body > .footer {
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           width: 80%;
+           padding: 100px 10%;
+           background-image: url("../../circle-scatter.svg");
+           background-repeat: no-repeat;
+           background-size: cover;
+         }
+
+         .main_body > .footer > div {
+           width: 20%;
+         }
+
+         .main_body > .footer > div > p:first-child {
+           width: 50%;
+           color: white;
+           font-family: "Josefin Sans";
+           font-size: 20px;
+           font-weight: 700;
+           border-bottom: solid 3px #4946bd;
+         }
+
+         .main_body > .footer > div > a {
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           color: white;
+           text-decoration: none;
+           padding: 7px 0;
+           font-weight: 500;
+         }
+
+         .main_body > .footer > .company > .social {
+           width: 40%;
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           justify-content: space-between;
+           margin-top: 20px;
+         }
+
+         .main_body > .footer > .company > .social > a > img,
+         .main_body > .footer > .contact > a > span > img {
+           width: 20px;
+         }
+
+         .main_body > .footer > .contact > a > span:first-child {
+           margin-right: 15px;
+         }
+
+         @media only screen and (max-width:1000px) {
+           .main_body > .footer > .contact {
+             display: none;
+           }
+         }
+       </style>
+     </div>
+  </body>
+</html>

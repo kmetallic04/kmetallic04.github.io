@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="visual" viewBox="0 0 900 600" width="900" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="595.089" y1="44.989" x2="595.089" y2="644.989" id="gradient-0" gradientTransform="matrix(-0.341579, -0.939853, 1.097411, -0.398841, 524.198721, 842.703004)">
+      <stop offset="0" style="stop-color: rgb(9, 5, 36);"/>
+      <stop offset="1" style="stop-color: rgb(54, 18, 118);"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="900" height="600" style="fill: url(#gradient-0);"/>
+  <g fill="none" stroke="#431073" stroke-width="2">
+    <circle r="12" cx="364" cy="57"/>
+    <circle r="6" cx="133" cy="193"/>
+    <circle r="7" cx="64" cy="215"/>
+    <circle r="8" cx="376" cy="18"/>
+    <circle r="9" cx="395" cy="379"/>
+    <circle r="6" cx="776" cy="593"/>
+    <circle r="10" cx="308" cy="506"/>
+    <circle r="7" cx="390" cy="423"/>
+    <circle r="5" cx="395" cy="468"/>
+    <circle r="10" cx="726" cy="150"/>
+    <circle r="8" cx="439" cy="347"/>
+    <circle r="10" cx="717" cy="215"/>
+    <circle r="8" cx="251" cy="195"/>
+    <circle r="5" cx="259" cy="583"/>
+    <circle r="6" cx="114" cy="35"/>
+    <circle r="5" cx="859" cy="27"/>
+    <circle r="6" cx="846" cy="362"/>
+    <circle r="10" cx="771" cy="94"/>
+    <circle r="5" cx="319" cy="323"/>
+    <circle r="6" cx="416" cy="55"/>
+    <circle r="9" cx="421" cy="291"/>
+    <circle r="6" cx="773" cy="274"/>
+    <circle r="9" cx="820" cy="266"/>
+    <circle r="7" cx="76" cy="124"/>
+    <circle r="6" cx="754" cy="420"/>
+    <circle r="10" cx="829" cy="146"/>
+    <circle r="8" cx="445" cy="382"/>
+    <circle r="8" cx="748" cy="587"/>
+    <circle r="5" cx="345" cy="525"/>
+    <circle r="5" cx="868" cy="439"/>
+    <circle r="8" cx="70" cy="9"/>
+    <circle r="6" cx="812" cy="32"/>
+    <circle r="5" cx="32" cy="133"/>
+    <circle r="6" cx="836" cy="490"/>
+    <circle r="5" cx="698" cy="295"/>
+    <circle r="7" cx="547" cy="508"/>
+    <circle r="6" cx="703" cy="165"/>
+    <circle r="10" cx="346" cy="383"/>
+    <circle r="7" cx="472" cy="404"/>
+    <circle r="9" cx="678" cy="238"/>
+    <circle r="9" cx="356" cy="104"/>
+    <circle r="9" cx="34" cy="288"/>
+    <circle r="10" cx="185" cy="309"/>
+    <circle r="8" cx="717" cy="66"/>
+    <circle r="8" cx="805" cy="235"/>
+    <circle r="10" cx="41" cy="566"/>
+    <circle r="10" cx="532" cy="381"/>
+    <circle r="9" cx="372" cy="224"/>
+  </g>
+</svg>

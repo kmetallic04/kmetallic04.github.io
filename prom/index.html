@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prometheus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600">
+     <script src="nav.js" defer></script>
+  </head>
+  <body>
+     <div class="header_nav">
+       <div class="header">
+         <nav expanded="false">
+           <img src="./logo.png" alt="logo.png">
+           <ul>
+             <li><a href="./services/domains/domains.html">Domains</a></li>
+             <li><a href="./services/hosting/hosting.html">Hosting</a></li>
+             <li><a href="./services/servers/servers.html">Servers</a></li>
+             <li><a href="./services/contact/contact.html">Contact</a></li>
+             <li><a href="#">Buy Now</a></li>
+           </ul>
+         </nav>
+         <button class="menu_button" name="menu"></button>
+         <div class="container">
+           <div class="title">
+             <p>PROMETHEU<span>S</span></p>
+             <p>Cloud Hosting Provider</p>
+             <p class="slogan">Efficiently scalable, easily manageable, undeniably powerful!</p>
+           </div>
+           <div class="image">
+             <img src="./cover-cloud.png" alt="cover-cloud.png">
+           </div>
+         </div>
+       </div>
+       <div class="header_divider"></div>
+     </div>
+     <style>
+       box-sizing: border-box;
+       html {
+         margin: 0;
+         padding: 0;
+       }
+       body {
+         font-family: "Dosis";
+         margin: 0;
+         padding: 0;
+         height: auto;
+       }
+       .header_nav {
+         height: 100%;
+       }
+       .header_nav > .header {
+         display: block;
+         width: 100%;
+         height: 100%;
+         background-image: url("./circle-scatter.svg");
+         background-repeat: no-repeat;
+         background-size: cover;
+       }
+
+       .header_nav > .header > nav {
+         width: 80%;
+         display: flex;
+         padding: 20px 10%;
+         align-items: center;
+         justify-content: space-between;
+         z-index: 9999;
+       }
+
+       .header_nav > .header > nav > img {
+         margin: 10px 5%;
+       }
+
+       .header_nav > .header > nav > ul {
+         display: flex;
+         justify-content: space-evenly;
+         width: 40%;
+         list-style-type: none;
+       }
+
+       .header_nav > .header > nav > ul > li > a {
+         color: white;
+         font-family: "Josefin Sans";
+         font-size: 17px;
+         font-weight: 400;
+         text-decoration: none;
+       }
+
+       .header_nav > .header > .menu_button {
+         display: none;
+       }
+
+       .header_nav > .header > .container {
+         height: 100%;
+         width: 100%;
+         display: flex;
+         padding: 5% 0 5% 0;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+       }
+
+       .header_nav > .header > .container > .title {
+         height: 100%;
+         width: 25%;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-end;
+         justify-content: flex-start;
+       }
+
+       .header_nav > .header > .container > .title > p:first-child {
+         position: relative;
+         left: 5%;
+         margin: 0;
+         font-family: "Josefin Sans";
+         color: #5FC6DA;
+         font-size: 2.5vw;
+         font-weight: 900;
+       }
+
+       .header_nav > .header > .container > .title > p:first-child > span {
+         position: relative;
+         left: -1%;
+         text-shadow: 5px 0 10px #5FC6DA;
+       }
+
+       .header_nav > .header > .container > .title > p:nth-child(2) {
+         margin: 0;
+         padding: 2px 10px;
+         background-color: #9018A1;
+         color: white;
+         font-family: "Advent Pro";
+         font-size: 1vw;
+         font-weight: 400;
+         border-radius: 5px;
+       }
+
+       .header_nav > .header > .container > .title > p:nth-child(3) {
+         padding-top: 10%;
+         color: white;
+         font-family: "Dosis";
+         font-size: 15px;
+         font-weight: 400;
+         text-align: right;
+       }
+
+       .header_nav > .header > .container > .image {
+         height: auto;
+         width: 25%;
+       }
+
+       .header_nav > .header > .container > .image > img {
+         height: auto;
+         width: 100%;
+       }
+
+       @media only screen and (max-width:1000px)  {
+         .header_nav > .header > .container > .title {
+           align-items: center;
+           height: auto;
+           width: 100%;
+         }
+         .header_nav > .header > .container > .title > p:first-child {
+           position: static;
+           font-size: 9vw;
+         }
+         .header_nav > .header > .container > .title > p:nth-child(2) {
+            font-size: 4vw;
+         }
+         .header_nav > .header > .container > .image {
+           width: 100%;
+         }
+         .header_nav > .header > .container {
+           display: block;
+           padding-top: 20%;
+           padding-bottom: 20%;
+         }
+         .header_nav > .header > nav {
+           position: fixed;
+           display: flex;
+           flex-direction: column;
+           align-items: flex-start;
+           justify-content: space-around;
+           padding: 10%;
+           inset: 0 0 0 30%;
+           background-color: #6800ffd6;
+           z-index: 9999;
+           transform: translateX(100%);
+           transition: transform  0.25s ease-out;
+         }
+
+         .header_nav > .header > nav > img {
+           display: none;
+         }
+
+         .header_nav > .header > nav > ul {
+           padding: 0 0 100px 0;
+           display: flex;
+           gap: 50px;
+           flex-direction: column;
+           justify-content: flex-start;
+           list-style-type: none;
+         }
+
+         .header_nav > .header > nav > ul > li > a {
+           font-family: "Josefin Sans";
+           font-size: 20px;
+           font-weight: 500;
+         }
+
+         .header_nav > .header > .menu_button {
+           display: block;
+           position: fixed;
+           z-index: 99999;
+           top: 20px;
+           right: 30px;
+           border: none;
+           aspect-ratio: 1;
+           width: 40px;
+           background-image: url("./menu.svg");
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-color: transparent;
+         }
+       }
+
+       @media only screen and (min-width:1000px) and (max-width:2600px)  {
+         .header_nav > .header > .container > .title > p:first-child {
+           position: static;
+           font-size: 60px;
+         }
+         .header_nav > .header > .container > .title > p:nth-child(2) {
+           font-size: 25px;
+         }
+       }
+       .header_nav > .header_divider::before {
+         content: "";
+         display: block;
+         aspect-ratio: 35/2;
+         width: 100%;
+         background-image: url("./waves-opacity.svg");
+         background-repeat: no-repeat;
+         background-size: cover;
+       }
+     </style>
+     <div class="main_body">
+       <div class="our_services">
+         <div class="container">
+           <div class="image">
+             <img src="./services.png" alt="services.png">
+           </div>
+           <div class="text">
+             <p>ABOUT</p>
+             <p>Prometheus Cloud</p>
+             <p>Secure site traffic and build customer trust with domain security and SSL certificates. Deploy your site, app or
+               PHP project straight from GitHub. Take full control of your own dedicated Intel/AMD hardware with a blazing fast VPS preloaded with VMWare virualization,
+               SSD storage and unlimited data transfer.
+            </p>
+            <a href="#">Get Started</a>
+           </div>
+         </div>
+       </div>
+       <style>
+          .main_body > .our_services {
+            background-image: url("./our-services-back.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          .main_body > .our_services > .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 5% 10%;
+          }
+
+          .main_body > .our_services::after {
+            content: "";
+            display: block;
+            height: auto;
+            width: 100%;
+            margin-top: 10%;
+            aspect-ratio: 10/1;
+            background-image: url("./tilt.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+
+          .main_body > .our_services > .container > .image {
+            height: auto;
+            width: 40%;
+          }
+
+          .main_body > .our_services > .container > .image > img {
+            height: auto;
+            width: 100%;
+          }
+
+          .main_body > .our_services > .container > .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            width: 40%;
+            padding: 5%;
+            background-color: #f0f0f0;
+            box-shadow: 0px 0px 25px #888;
+            border-radius: 10px;
+          }
+
+          .main_body > .our_services > .container > .text > p:first-child {
+            margin: 0;
+            color: #D1088B;
+            font-family: "Josefin Sans";
+            font-size: 45px;
+            font-weight: 600;
+          }
+
+          .main_body > .our_services > .container > .text > p:nth-child(2) {
+            margin: 0;
+            color:  #1875F9;
+            font-size: 30px;
+            font-weight: 600;
+          }
+
+          .main_body > .our_services > .container > .text > p:nth-child(3) {
+            color: #4D4D4D;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 150%;
+          }
+
+          .main_body > .our_services > .container > .text > a {
+            align-self: flex-end;
+            width: 80px;
+            text-decoration: none;
+            font-family: "Josefin Sans";
+            text-align: center;
+            color: white;
+            background-color: #D1088B;
+            padding: 7px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 3px #D1088B;
+          }
+
+          @media only screen and (max-width:1000px)  {
+            .main_body > .our_services > .container {
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-around;
+            }
+
+            .main_body > .our_services > .container > .image {
+              width: 60%;
+              margin-bottom: 10%;
+            }
+
+            .main_body > .our_services > .container > .text {
+              height: 100%;
+              width: 90%;
+            }
+          }
+       </style>
+       <div class="services_cards">
+         <div class="container">
+           <div class="card">
+             <div class="content">
+               <img src="./cards/domain.svg" alt="domain.svg">
+               <p>DOMAINS</p>
+               <p>Protect your digital assets with SSL Certificates</p>
+             </div>
+             <a href="#">Read More</a>
+           </div>
+           <div class="card">
+             <div class="content">
+               <img src="./cards/hosting.svg" alt="hosting.svg">
+               <p>HOSTING</p>
+               <p>Deploy your site, app or PHP project straight from GitHub.</p>
+             </div>
+             <a href="#">Read More</a>
+           </div>
+           <div class="card">
+             <div class="content">
+               <img src="./cards/server.svg" alt="server.svg">
+               <p>SERVERS</p>
+               <p>Get full access to blazingly fast Intel Xeon or AMD 248 CPUS</p>
+             </div>
+             <a href="#">Read More</a>
+           </div>
+         </div>
+       </div>
+       <style>
+         .main_body > .services_cards {
+           height: 300px;
+           width: 100%;
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           background-color: #350879;
+         }
+         .main_body > .services_cards > .container {
+           height: 100px;
+           width: 80%;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           align-items: center;
+           background-color: #350879;
+         }
+         .main_body > .services_cards > .container > .card {
+           position: relative;
+           height: 350%;
+           width: 15%;
+           top: -75%;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+           padding: 5%;
+           background-color: #f0f0f0;
+           box-shadow: 0px 0px 10px #888;
+           border-radius: 10px;
+         }
+
+         .main_body > .services_cards > .container > .card > .content {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+         }
+
+         .main_body > .services_cards > .container > .card > .content > img {
+           height: auto;
+           width: 30%;
+           margin: 20px;
+         }
+
+         .main_body > .services_cards > .container > .card > .content > p:nth-child(2) {
+           margin: 0;
+           color: #D1088B;
+           font-family: "Josefin Sans";
+           font-size: 30px;
+           font-weight: 600;
+         }
+
+         .main_body > .services_cards > .container > .card > .content > p:nth-child(3) {
+           color: #4D4D4D;
+           font-size: 16px;
+           font-weight: 300;
+           line-height: 150%;
+         }
+
+         .main_body > .services_cards > .container > .card > a {
+           align-self: flex-end;
+           width: 80px;
+           text-decoration: none;
+           font-family: "Josefin Sans";
+           text-align: center;
+           color: white;
+           background-color: #D1088B;
+           padding: 7px;
+           border-radius: 10px;
+           box-shadow: 0px 0px 3px #D1088B;
+         }
+
+         @media only screen and (max-width:1000px)  {
+           .main_body > .services_cards {
+             height: auto;
+           }
+
+           .main_body > .services_cards > .container {
+             display: block;
+             width: 100%;
+             height: auto;
+           }
+           .main_body > .services_cards > .container > .card {
+             height: auto;
+             width: 80%;
+             position: static;
+             margin: 5%;
+           }
+         }
+       </style>
+       <div class="why_us">
+         <div class="container">
+           <div class="content_container">
+             <div class="image">
+               <img src="./why_us.png" alt="why_us.png">
+             </div>
+             <div class="text">
+               <div class="title">
+                 <p>Why</p>
+                 <p>Choose <span>Us?</span></p>
+               </div>
+               <ul class="list">
+                 <li class="list_element">Reliable and respected brand in field of web</li>
+                 <li class="list_element">Reliable and respected brand in the field design</li>
+                 <li class="list_element">Reliable and respected brand in the field of</li>
+                 <li class="list_element">Reliable and respected brand in of the field of</li>
+                 <li class="list_element">Reliable and respected brand in the field of web</li>
+               </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="why_us_divider"></div>
+       <style>
+         .main_body > .why_us {
+           height: auto;
+           width: 100%;
+           background-color: #350879;
+         }
+
+         .main_body > .why_us > .container > .content_container {
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           justify-content: space-around;
+         }
+
+         .main_body > .why_us > .container > .content_container > .image {
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           width: 50%;
+         }
+
+         .main_body > .why_us > .container > .content_container > .image > img {
+           height: auto;
+           width: 50%;
+         }
+
+         .main_body > .why_us > .container > .content_container > .text {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: flex-start;
+           width: 50%;
+         }
+
+         .main_body > .why_us > .container > .content_container > .text > .title {
+           padding: 20px;
+         }
+
+         .main_body > .why_us > .container > .content_container > .text > .title > p {
+           margin: 0;
+           font-family: "Josefin Sans";
+         }
+
+         .main_body > .why_us > .container > .content_container > .text > .title > p:first-child {
+           color: #fff;
+           font-size: 45px;
+           font-weight: 600;
+         }
+
+         .main_body > .why_us > .container > .content_container > .text > .title > p:nth-child(2) {
+           /* color: #5FC6DA; */
+           color: #fff;
+           font-size: 45px;
+           font-weight: 600;
+           /* text-decoration: underline solid #D1088B 5px; */
+         }
+
+         .main_body > .why_us > .container > .content_container > .text > ul {
+           color: #fff;
+           font-size: 18px;
+           font-weight: 500;
+           line-height: 150%;
+         }
+
+         .why_us_divider::before {
+           content: "";
+           display: block;
+           height: auto;
+           width: 100%;
+           aspect-ratio: 10/1;
+           background-image: url("./tilt_inverse.svg");
+           background-repeat: no-repeat;
+           background-size: cover;
+         }
+          @media only screen and (max-width:1000px) {
+            .main_body > .why_us {
+              /* padding-top: 1200px; */
+            }
+
+            .main_body > .why_us > .container > .content_container {
+              flex-direction: column;
+              align-items: center;
+              padding: 50px 10px;
+            }
+
+            .main_body > .why_us > .container > .content_container > .image > img {
+              width: 200px;
+            }
+
+            .main_body > .why_us > .container > .content_container > .text {
+              width: 90%;
+              align-items: center;
+              padding-top: 25px;
+            }
+
+            .main_body > .why_us > .container > .content_container > .text > .title {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
+
+            .main_body > .why_us > .container > .content_container > .text > .title > p:first-child,
+            .main_body > .why_us > .container > .content_container > .text > .title > p:nth-child(2){
+              text-align: center;
+              font-size: 40px;
+              font-weight: 600;
+            }
+
+            .main_body > .why_us > .container > .content_container > .text > ul {
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+       </style>
+       <div class="hosting_features">
+         <div class="container">
+           <div class="feature">
+             <div class="image">
+               <img src="./features/security.svg" alt="security.svg">
+             </div>
+             <p>For reliable protection of your website visitors and to increase your Google ranking, one Wildcard SSL certificate is included with your initial contract.</p>
+           </div>
+           <div class="feature">
+             <div class="image">
+               <img src="./features/speed.svg" alt="speed.svg">
+             </div>
+             <p>Fast page load times thanks to web servers running the HTTP/2 network protocol with multiplexing and header compression for SSL encrypted traffic.</p>
+           </div>
+           <div class="feature">
+             <div class="image">
+               <img src="./features/subdomains.svg" alt="subdomains.svg">
+             </div>
+             <p>Up to 10,000 subdomains to customize and structure your website, for example: news.mycompany.com.</p>
+           </div>
+           <div class="feature">
+             <div class="image">
+               <img src="./features/uptime.svg" alt="uptime.svg">
+             </div>
+             <p>99.99% uptime will keep your project online and result in fewer outages.</p>
+           </div>
+           <div class="feature">
+             <div class="image">
+               <img src="./features/dedicated-hosting.svg" alt="dedicated-hosting.svg">
+             </div>
+             <p>The best of both worlds. Enjoy world-class performance with powerful dedicated hardware, bandwidth and processing power, without having to worry about server administration.</p>
+           </div>
+           <div class="feature">
+             <div class="image">
+               <img src="./features/virtualization.svg" alt="virtualization.svg">
+             </div>
+             <p>Our virtual private servers are fully virtualized for more isolation, autonomy, and security.</p>
+           </div>
+         </div>
+       </div>
+       <style>
+         .main_body > .hosting_features > .container {
+           height: auto;
+           width: 80%;
+           padding: 20px 10%;
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           justify-content: space-around;
+           flex-wrap: wrap;
+         }
+
+         .main_body > .hosting_features > .container > .feature {
+           height: auto;
+           width: 20%;
+           padding: 5%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+         }
+
+         .main_body > .hosting_features > .container > .feature > .image {
+           height: auto;
+           width: 30%;
+           padding: 5%;
+         }
+
+         .main_body > .hosting_features > .container > .feature > p {
+           text-align: center;
+         }
+
+         @media only screen and (max-width:1000px) {
+           .main_body > .hosting_features > .container > .feature {
+             width: 30%;
+           }
+         }
+       </style>
+       <div class="plans">
+         <div class="heading">
+           <p>Web Hosting Plans</p>
+           <p>Choose what's best</p>
+         </div>
+         <div class="container">
+           <div class="plan">
+             <p>DOMAIN TRANSFER</p>
+             <div class="pricing">
+               <p>Starting from</p>
+               <p><span>$</span>13.00<span>/mo</span></p>
+             </div>
+             <p>Transferring your domain to Prometheus means more free domain features.</p>
+             <a href="#">Get Plan</a>
+           </div>
+           <div class="plan">
+             <p>WEB HOSTING</p>
+             <div class="pricing">
+               <p>Starting from</p>
+               <p><span>$</span>33.00<span>/mo</span></p>
+             </div>
+             <p>Cheap Reliable Web Hosting Powered by Lite Speed Server.</p>
+             <a href="#">Get Plan</a>
+           </div>
+           <div class="plan">
+             <p>VPS SERVER</p>
+             <div class="pricing">
+               <p>Starting from</p>
+               <p><span>$</span>40.00<span>/mo</span></p>
+             </div>
+             <p>Host your website on dedicated hardware with 99.99% Uptime</p>
+             <a href="#">Get Plan</a>
+           </div>
+           <div class="plan">
+             <p>DEDICATED SERVER</p>
+             <div class="pricing">
+               <p>Starting from</p>
+               <p><span>$</span>64.00<span>/mo</span></p>
+             </div>
+             <p>An admin-free server with unlimited bandwidth for heavy duty applications</p>
+             <a href="#">Get Plan</a>
+           </div>
+         </div>
+       </div>
+       <style>
+         .main_body > .plans > .heading > p:first-child {
+            color: #1875F9;
+            font-family: "Josefin Sans";
+            font-size: 40px;
+            font-weight: 600;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 0;
+         }
+
+         .main_body > .plans > .heading > p:nth-child(2) {
+            color: #5736ad;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 75px;
+         }
+
+         .main_body > .plans > .container {
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           justify-content: space-around;
+           padding: 30px 10% 150px 10%;
+         }
+
+         .main_body > .plans > .container > .plan {
+           height: 350px;
+           width: 17%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: space-around;
+           text-align: center;
+           padding: 20px 20px 50px 20px;
+           border-radius: 5px;
+           box-shadow: 0px 0px 25px #888;
+         }
+
+         .main_body > .plans > .container > .plan:nth-child(2),
+         .main_body > .plans > .container > .plan:nth-child(3) {
+           background: rgb(88,54,173);
+           background: linear-gradient(0deg, rgba(88,54,173,1) 0%, rgba(25,127,248,1) 100%);
+         }
+
+         .main_body > .plans > .container > .plan > p:nth-child(1) {
+           font-family: "Josefin Sans";
+           font-weight: 600;
+           font-size: 23px;
+           color: #5736ad;
+         }
+
+         .main_body > .plans > .container > .plan > p:nth-child(3) {
+           color: #5736ad;
+           height: 50px;
+           margin-top: 0;
+           padding: 40px 20px 20px 20px;
+           font-weight: 600;
+           font-size: 12px;
+           border-top: medium solid #f1f4fb;
+         }
+
+         .main_body > .plans > .container > .plan > .pricing {
+           height: auto;
+           width: 100%;
+           position: relative;
+           bottom: 20px;
+           display: flex;
+           flex-direction: column;
+         }
+
+         .main_body > .plans > .container > .plan > .pricing > p:nth-child(1) {
+           color: #1875F9;
+           font-size: 12px;
+           font-weight: 500;
+           margin-bottom: 2px;
+           margin-left: 25%;
+           align-self: flex-start;
+           text-align: left;
+         }
+
+         .main_body > .plans > .container > .plan > .pricing > p:nth-child(2) {
+           color: #1875F9;
+           font-size: 30px;
+           font-weight: 600;
+           margin-top: 0;
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           justify-content: center;
+         }
+
+         .main_body > .plans > .container > .plan > .pricing > p:nth-child(2) > span:nth-child(1) {
+           position: relative;
+           top: 1px;
+           font-size: 15px;
+           font-weight: 500;
+           align-self: flex-start;
+           padding-right: 2px;
+         }
+
+         .main_body > .plans > .container > .plan > .pricing > p:nth-child(2) > span:nth-child(2) {
+           font-size: 15px;
+           font-weight: 500;
+           align-self: flex-end;
+         }
+
+         .main_body > .plans > .container > .plan:nth-child(2) > .pricing > p,
+         .main_body > .plans > .container > .plan:nth-child(3) > .pricing > p,
+         .main_body > .plans > .container > .plan:nth-child(2) > p:nth-child(1),
+         .main_body > .plans > .container > .plan:nth-child(3) > p:nth-child(1),
+         .main_body > .plans > .container > .plan:nth-child(2) > p:nth-child(3),
+         .main_body > .plans > .container > .plan:nth-child(3) > p:nth-child(3) {
+            color: #fff !important;
+         }
+
+         .main_body > .plans > .container > .plan:nth-child(2) > p:nth-child(3),
+         .main_body > .plans > .container > .plan:nth-child(3) > p:nth-child(3) {
+            border-top: medium solid #4946bd !important;
+         }
+
+         .main_body > .plans > .container > .plan > a {
+           width: 80px;
+           text-decoration: none;
+           font-family: "Josefin Sans";
+           text-align: center;
+           color: white;
+           background-color: #D1088B;
+           padding: 8px;
+           border-radius: 20px;
+         }
+
+         @media only screen and (max-width:1000px) {
+           .main_body > .plans > .container {
+             flex-direction: column;
+           }
+
+           .main_body > .plans > .container > .plan {
+             margin: 20px;
+             width: 60%;
+           }
+
+           .main_body > .plans > .heading > p:first-child {
+              font-size: 30px;
+           }
+
+           .main_body > .plans > .heading > p:nth-child(2) {
+              margin-bottom: 0;
+           }
+
+           .main_body > .plans > .container > .plan > p:nth-child(3) {
+             font-size: 15px;
+             font-weight: 500;
+           }
+         }
+
+         @media only screen and (max-width:600px) {
+           .main_body > .plans > .container > .plan {
+             width: 75%;
+           }
+
+           .main_body > .plans > .container > .plan > p:nth-child(3) {
+             font-size: 12px;
+             font-weight: 600;
+           }
+         }
+       </style>
+       <div class="getting_started">
+         <div class="container">
+           <div class="text">
+             <p>GETTING STARTED...</p>
+             <p>Let's get started today and we will migrate your website for you.</p>
+             <p>Migrating all of your website content from one host to another - plus domain transfers - can be
+               a real pain. Let Prometheus Hosting take care of all of that for you.
+            </p>
+            <a href="#">Get Started</a>
+           </div>
+           <div class="image">
+             <img src="./getting_started.svg" alt="getting_started.svg">
+           </div>
+         </div>
+       </div>
+       <style>
+          .main_body > .getting_started {
+            background-color: #f0f0f0;
+          }
+          .main_body > .getting_started > .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 5% 10%;
+          }
+
+          .main_body > .getting_started > .container > .image {
+            height: auto;
+            width: 40%;
+          }
+
+          .main_body > .getting_started > .container > .image > img {
+            height: auto;
+            width: 100%;
+          }
+
+          .main_body > .getting_started > .container > .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            width: 40%;
+            padding: 5%;
+          }
+
+          .main_body > .getting_started > .container > .text > p:first-child {
+            margin: 0;
+            color: #D1088B;
+            font-family: "Josefin Sans";
+            font-size: 45px;
+            font-weight: 600;
+          }
+
+          .main_body > .getting_started > .container > .text > p:nth-child(2) {
+            margin: 0;
+            color:  #1875F9;
+            font-size: 30px;
+            font-weight: 600;
+          }
+
+          .main_body > .getting_started > .container > .text > p:nth-child(3) {
+            color: #4D4D4D;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 150%;
+          }
+
+          .main_body > .getting_started > .container > .text > a {
+            align-self: flex-end;
+            width: 80px;
+            text-decoration: none;
+            font-family: "Josefin Sans";
+            text-align: center;
+            color: white;
+            background-color: #D1088B;
+            padding: 7px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 3px #D1088B;
+          }
+
+          @media only screen and (max-width:1000px)  {
+            .main_body > .getting_started > .container {
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-around;
+            }
+
+            .main_body > .getting_started > .container > .image {
+              width: 60%;
+              margin-bottom: 10%;
+            }
+
+            .main_body > .getting_started > .container > .text {
+              height: 100%;
+              width: 70%;
+            }
+          }
+       </style>
+       <div class="footer">
+         <div class="company">
+           <p>Company</p>
+           <a href="#">Services</a>
+           <a href="#">Contact Us</a>
+           <div class="social">
+             <a href="#"><img src="./footer/facebook.svg" alt="facebook.svg"></a>
+             <a href="#"><img src="./footer/twitter.svg" alt="twitter.svg"></a>
+             <a href="#"><img src="./footer/linkedin.svg" alt="linkedin.svg"></a>
+           </div>
+         </div>
+         <div class="services">
+           <p>Services</p>
+           <a href="#">Web Hosting</a>
+           <a href="#">VPS Server</a>
+           <a href="#">Dedicated Server</a>
+         </div>
+         <div class="others">
+           <p>Others</p>
+           <a href="#">Domain Transfer</a>
+           <a href="#">Deploy Now</a>
+           <a href="#">Plex Portal</a>
+           <a href="#">CPanel Portal</a>
+         </div>
+         <div class="contact">
+           <p>Contact</p>
+           <a href="#"><span><img src="./footer/phone.svg" alt="phone.svg"></span><span>002-0356-4589</span></a>
+           <a href="#"><span><img src="./footer/email.svg" alt="email.svg"></span><span>prometheus@gmail.com</span></a>
+           <a href="#"><span><img src="./footer/location.svg" alt="location.svg"></span><span>Somewhere in Africa</span></a>
+         </div>
+       </div>
+       <style>
+         .main_body > .footer {
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           width: 80%;
+           padding: 100px 10%;
+           background-image: url("./circle-scatter.svg");
+           background-repeat: no-repeat;
+           background-size: cover;
+         }
+
+         .main_body > .footer > div {
+           width: 20%;
+         }
+
+         .main_body > .footer > div > p:first-child {
+           width: 50%;
+           color: white;
+           font-family: "Josefin Sans";
+           font-size: 20px;
+           font-weight: 700;
+           border-bottom: solid 3px #4946bd;
+         }
+
+         .main_body > .footer > div > a {
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           color: white;
+           text-decoration: none;
+           padding: 7px 0;
+           font-weight: 500;
+         }
+
+         .main_body > .footer > .company > .social {
+           width: 40%;
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           justify-content: space-between;
+           margin-top: 20px;
+         }
+
+         .main_body > .footer > .company > .social > a > img,
+         .main_body > .footer > .contact > a > span > img {
+           width: 20px;
+         }
+
+         .main_body > .footer > .contact > a > span:first-child {
+           margin-right: 15px;
+         }
+
+         @media only screen and (max-width:1000px) {
+           .main_body > .footer > .contact {
+             display: none;
+           }
+         }
+       </style>
+     </div>
+  </body>
+</html>

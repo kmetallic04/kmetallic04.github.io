@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hosting Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700">
+    <script src="../nav.js" defer></script>
+  </head>
+  <body>
+    <div class="header_nav">
+      <nav expanded="false">
+        <img src="../../logo.png" alt="logo.png">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../domains/domains.html">Domains</a></li>
+          <li><a href="../hosting/hosting.html">Hosting</a></li>
+          <li><a href="../servers/servers.html">Servers</a></li>
+          <li><a href="../contact/contact.html">Contact</a></li>
+          <li><a href="#">Buy Now</a></li>
+        </ul>
+      </nav>
+      <button class="menu_button" name="menu"></button>
+      <div class="container">
+        <div class="title">
+          <h2>Hosting Services</h2>
+          <p>We offer a variety of hosting services.</p>
+        </div>
+      </div>
+    </div>
+    <style>
+      html {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Dosis";
+        margin: 0;
+        padding: 0;
+        height: auto;
+      }
+
+      .header_nav {
+        background-image: url("../../circle-scatter.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .header_nav > nav {
+        width: 80%;
+        display: flex;
+        padding: 20px 10%;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 9999;
+      }
+
+      .header_nav > nav > img {
+        margin: 10px 5%;
+      }
+
+      .header_nav > nav > ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 40%;
+        list-style-type: none;
+      }
+
+      .header_nav > nav > ul > li > a {
+        color: white;
+        font-family: "Josefin Sans";
+        font-size: 17px;
+        font-weight: 400;
+        text-decoration: none;
+      }
+
+      .header_nav > .menu_button {
+        display: none;
+      }
+
+      .header_nav > .container {
+        width: 100%;
+      }
+
+      .header_nav > .container > .title {
+        height: 250px;
+        width: 100%;
+        margin-left: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .header_nav > .container > .title > h2 {
+        margin: 5px 15px;
+        color: white;
+        font-family: "Advent Pro";
+        font-size: 45px;
+        font-weight: 700;
+        border-radius: 5px;
+      }
+
+      .header_nav > .container > .title > p:nth-child(2) {
+        width: max-content;
+        margin: 5px 15px;
+        padding: 2px 10px;
+        background-color: #9018A1;
+        color: white;
+        font-family: "Advent Pro";
+        font-size: 25px;
+        font-weight: 600;
+        border-radius: 5px;
+      }
+
+
+       @media only screen and (max-width:1000px) {
+          .header_nav > .title > h2 {
+            width: auto;
+            margin: 0 5%;
+          }
+
+          .header_nav > .container > .title {
+            padding: 10%;
+            margin: auto;
+          }
+
+          .header_nav > nav {
+           position: fixed;
+           display: flex;
+           flex-direction: column;
+           align-items: flex-start;
+           justify-content: space-around;
+           padding: 10%;
+           inset: 0 0 0 30%;
+           background-color: #6800ffd6;
+           z-index: 9999;
+           transform: translateX(100%);
+           transition: transform  0.25s ease-out;
+         }
+
+         .header_nav > nav > img {
+           display: none;
+         }
+
+         .header_nav > nav > ul {
+           padding: 0 0 100px 0;
+           display: flex;
+           gap: 50px;
+           flex-direction: column;
+           justify-content: flex-start;
+           list-style-type: none;
+         }
+
+         .header_nav > nav > ul > li > a {
+           font-family: "Josefin Sans";
+           font-size: 20px;
+           font-weight: 500;
+         }
+
+         .header_nav > .menu_button {
+           display: block;
+           position: fixed;
+           z-index: 99999;
+           top: 20px;
+           right: 30px;
+           border: none;
+           aspect-ratio: 1;
+           width: 40px;
+           background-image: url("../../menu.svg");
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-color: transparent;
+         }
+       }
+
+        @media only screen and (max-width:500px) {
+          .header_nav > .container > .title {
+            width: auto;
+          }
+
+          .header_nav > .container > .title > p:nth-child(2) {
+            width: auto;
+          }
+        }
+    </style>
+     <div class="main_body">
+       <div class="domains">
+         <div class="title">
+           <h3>PEAK LOADING TIMES FOR YOUR PROJECT...</h3>
+           <p>React to spikes in traffic in seconds with scalable, secure hosting.</p>
+         </div>
+       </div>
+       <style>
+         .main_body > .domains > .container {
+           width: 80%;
+           padding: 100px 10%;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-evenly;
+         }
+
+          .main_body > .domains > .title {
+             margin: 100px auto 30px auto;
+          }
+
+         .main_body > .domains > .title > h3 {
+           font-family: "Advent Pro";
+           font-size: 40px;
+           text-align: center;
+           color: #1875F9;
+         }
+
+         .main_body > .domains > .title > p {
+           text-align: center;
+           color: #4d4d4d;
+           font-size: 20px;
+           font-weight: 500;
+         }
+
+         .main_body > .domains > .container > .domain {
+           height: 250px;
+           width: 10%;
+           display: flex;
+           align-items: center;
+           flex-direction: column;
+           justify-content: space-around;
+           padding: 4%;
+           border-radius: 5px;
+           box-shadow: 0px 0px 25px #888;
+         }
+
+         .main_body > .domains > .container > .domain > img:first-child {
+           width: 100px;
+         }
+
+         .main_body > .domains > .container > .domain > .pricing:nth-child(2) > p {
+           margin: 0;
+         }
+
+         .main_body > .domains > .container > .domain > .pricing:nth-child(2) > p:first-child {
+           font-size: 30px;
+           font-weight: 600;
+         }
+
+         .main_body > .domains > .container > .domain > .pricing:nth-child(2) > p:nth-child(2) {
+           font-size: 15px;
+           text-align: center;
+         }
+
+         .main_body > .domains > .container > .domain > .pricing:nth-child(2) > p:first-child > span:first-child {
+           font-size: 15px;
+           vertical-align: super;
+         }
+
+         .main_body > .domains > .container > .domain > .pricing:nth-child(2) > p:first-child > span:nth-child(2) {
+           font-size: 15px;
+           vertical-align: super;
+         }
+
+         .main_body > .domains > .container > .domain > .pricing:nth-child(2) > p:first-child > span:last-child {
+           font-size: 10px;
+           vertical-align: baseline;
+         }
+
+         .main_body > .domains > .container > .domain > a {
+           width: 80px;
+           text-decoration: none;
+           font-family: "Josefin Sans";
+           font-size: 18px;
+           text-align: center;
+           color: white;
+           background-color: #D1088B;
+           padding: 10px;
+           border-radius: 10px;
+           /* box-shadow: 0px 0px 3px #D1088B; */
+         }
+
+         @media only screen and (max-width:1000px) {
+            .main_body > .domains > .title > h3 {
+              width: auto;
+              margin: 0 5%;
+            }
+
+            .main_body > .domains > .title > p {
+              margin: 5%;
+            }
+
+            .main_body > .domains > .container {
+              flex-direction: column;
+              gap: 20px;
+              padding: 10%;
+            }
+            .main_body > .domains > .container > .domain {
+              width: auto;
+            }
+         }
+       </style>
+       <div class="geo-redundant">
+         <div class="container">
+           <div class="text">
+             <p>GEO-REDUNDANT HOSTING</p>
+             <p>Replicated Hosting</p>
+             <p>Keep your project online with 99.9% uptime and our georedundant infrastructure. Your data is mirrored
+               in two data centers, so your hosting stays uninterrupted even during maintenance and outages.</p>
+             <p>Server Shield Security</p>
+             <p>Cutting edge server-side security also helps keep your site up and running. We use our own server shield
+               technology to prevent DDoS attacks.</p>
+            <a href="#">Get Started</a>
+           </div>
+           <div class="image">
+             <img src="./geo-redundant.svg" alt="geo-redundant.svg">
+           </div>
+         </div>
+       </div>
+       <style>
+          .main_body > .geo-redundant > .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0 10%;
+          }
+
+          .main_body > .geo-redundant > .container > .image {
+            height: auto;
+            width: 40%;
+          }
+
+          .main_body > .geo-redundant > .container > .image > img {
+            height: auto;
+            width: 100%;
+          }
+
+          .main_body > .geo-redundant > .container > .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            width: 40%;
+            padding: 5%;
+          }
+
+          .main_body > .geo-redundant > .container > .text > p:first-child {
+            margin: 0 0 30px 0;
+            color: #D1088B;
+            font-family: "Josefin Sans";
+            font-size: 35px;
+            font-weight: 600;
+          }
+
+          .main_body > .geo-redundant > .container > .text > p:nth-child(2),
+          .main_body > .geo-redundant > .container > .text > p:nth-child(4) {
+            margin: 0;
+            color:  #1875F9;
+            font-size: 22px;
+            font-weight: 600;
+          }
+
+          .main_body > .geo-redundant > .container > .text > p:nth-child(3),
+          .main_body > .geo-redundant > .container > .text > p:nth-child(5) {
+            color: #4D4D4D;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 150%;
+          }
+
+          .main_body > .geo-redundant > .container > .text > a {
+            align-self: flex-end;
+            width: 80px;
+            text-decoration: none;
+            font-family: "Josefin Sans";
+            text-align: center;
+            color: white;
+            background-color: #D1088B;
+            padding: 7px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 3px #D1088B;
+          }
+
+          @media only screen and (max-width:1000px)  {
+            .main_body > .geo-redundant > .container {
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-around;
+              padding: 5%;
+            }
+
+            .main_body > .geo-redundant > .container > .image {
+              width: 60%;
+              margin-bottom: 10%;
+            }
+
+            .main_body > .geo-redundant > .container > .text {
+              height: 100%;
+              width: 70%;
+            }
+          }
+       </style>
+       <div class="performance">
+         <div class="container">
+           <div class="text">
+             <p>SCALABLE PERFORMANCE MANAGEMENT</p>
+             <p>On Demand Scaling</p>
+             <p>Adjust the performance of your project at any time thanks to scalable performance levels that ensure you keep
+               up with demand. Each additional performance level costs $2/month</p>
+             <p>Autoscaling</p>
+             <p>As soon as your current performance level has reached its limit, you'll get an email notification. You can then
+               adjust the performance level as needed.</p>
+            <a href="#">Get Started</a>
+           </div>
+           <div class="image">
+             <img src="./scalable.svg" alt="performance.svg">
+           </div>
+         </div>
+       </div>
+       <style>
+          .main_body > .performance > .container {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0 10%;
+          }
+
+          .main_body > .performance > .container > .image {
+            height: auto;
+            width: 40%;
+          }
+
+          .main_body > .performance > .container > .image > img {
+            height: auto;
+            width: 100%;
+          }
+
+          .main_body > .performance > .container > .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            width: 40%;
+            padding: 5%;
+          }
+
+          .main_body > .performance > .container > .text > p:first-child {
+            margin: 0 0 30px 0;
+            color: #D1088B;
+            font-family: "Josefin Sans";
+            font-size: 35px;
+            font-weight: 600;
+          }
+
+          .main_body > .performance > .container > .text > p:nth-child(2),
+          .main_body > .performance > .container > .text > p:nth-child(4) {
+            margin: 0;
+            color:  #1875F9;
+            font-size: 22px;
+            font-weight: 600;
+          }
+
+          .main_body > .performance > .container > .text > p:nth-child(3),
+          .main_body > .performance > .container > .text > p:nth-child(5) {
+            color: #4D4D4D;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 150%;
+          }
+
+          .main_body > .performance > .container > .text > a {
+            align-self: flex-end;
+            width: 80px;
+            text-decoration: none;
+            font-family: "Josefin Sans";
+            text-align: center;
+            color: white;
+            background-color: #D1088B;
+            padding: 7px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 3px #D1088B;
+          }
+
+          @media only screen and (max-width:1000px)  {
+            .main_body > .performance > .container {
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-around;
+              padding: 5%;
+            }
+
+            .main_body > .performance > .container > .image {
+              width: 60%;
+              margin-bottom: 10%;
+            }
+
+            .main_body > .performance > .container > .text {
+              height: 100%;
+              width: 70%;
+            }
+          }
+       </style>
+       <div class="app">
+         <div class="container">
+           <div class="text">
+             <p>WORK WITH YOUR FAVOURITE APPS IN ONE CLICK</p>
+             <p>Multiple Plugins</p>
+             <p>All of our web hosting plans come with a range of great plugins to enhance your website. Choose from
+               the most popular web hosting applications including TYPO3, Joomla!, Drupal and PrestaShop. All plugins are
+               free and easy to install.</p>
+             <p>Managed WordPress</p>
+             <p>The WordPress plugin is also available to install, but for a more comprehensive solution we recommend
+               Prometheus Managed WordPress.</p>
+            <a href="#">Get Started</a>
+           </div>
+           <div class="image">
+             <img src="./apps.svg" alt="app.svg">
+           </div>
+         </div>
+       </div>
+       <style>
+          .main_body > .app > .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0 10%;
+          }
+
+          .main_body > .app > .container > .image {
+            height: auto;
+            width: 40%;
+          }
+
+          .main_body > .app > .container > .image > img {
+            height: auto;
+            width: 100%;
+          }
+
+          .main_body > .app > .container > .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            width: 40%;
+            padding: 5%;
+          }
+
+          .main_body > .app > .container > .text > p:first-child {
+            margin: 0 0 30px 0;
+            color: #D1088B;
+            font-family: "Josefin Sans";
+            font-size: 35px;
+            font-weight: 600;
+          }
+
+          .main_body > .app > .container > .text > p:nth-child(2),
+          .main_body > .app > .container > .text > p:nth-child(4) {
+            margin: 0;
+            color:  #1875F9;
+            font-size: 22px;
+            font-weight: 600;
+          }
+
+          .main_body > .app > .container > .text > p:nth-child(3),
+          .main_body > .app > .container > .text > p:nth-child(5) {
+            color: #4D4D4D;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 150%;
+          }
+
+          .main_body > .app > .container > .text > a {
+            align-self: flex-end;
+            width: 80px;
+            text-decoration: none;
+            font-family: "Josefin Sans";
+            text-align: center;
+            color: white;
+            background-color: #D1088B;
+            padding: 7px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 3px #D1088B;
+          }
+
+          @media only screen and (max-width:1000px)  {
+            .main_body > .app > .container {
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-around;
+              padding: 5%;
+            }
+
+            .main_body > .app > .container > .image {
+              width: 60%;
+              margin-bottom: 10%;
+            }
+
+            .main_body > .app > .container > .text {
+              height: 100%;
+              width: 70%;
+            }
+          }
+       </style>
+       <div class="plans">
+         <div class="heading">
+           <p>Web Hosting Plans</p>
+           <p>Choose what's best</p>
+         </div>
+         <div class="container">
+           <div class="plan">
+             <p>ESSENTIAL</p>
+             <div class="pricing">
+               <p>Starting from</p>
+               <p><span>$</span>33.00<span>/mo</span></p>
+             </div>
+             <ul>
+               <li>1 website</li>
+               <li>10 GB storage</li>
+               <li>10 databases</li>
+               <li>Basic CPU & MEM resources</li>
+               <li>Free domain for 1 year</li>
+               <li>Free professional email</li>
+             </ul>
+             <a href="#">Get Plan</a>
+           </div>
+           <div class="plan">
+             <p>BUSINESS</p>
+             <div class="pricing">
+               <p>Starting from</p>
+               <p><span>$</span>40.00<span>/mo</span></p>
+             </div>
+             <ul>
+               <li>Unlimited websites</li>
+               <li>Unlimited storage</li>
+               <li>Unlimited databases</li>
+               <li>Enhanced CPU & MEM resources</li>
+               <li>Free domain for 1 year</li>
+               <li>Free Wildcard SSL certificate</li>
+               <li>Free professional email</li>
+               <li>Daily backup & recovery</li>
+             </ul>
+             <a href="#">Get Plan</a>
+           </div>
+           <div class="plan">
+             <p>EXPERT</p>
+             <div class="pricing">
+               <p>Starting from</p>
+               <p><span>$</span>64.00<span>/mo</span></p>
+             </div>
+             <ul>
+               <li>Unlimited websites</li>
+               <li>Unlimited storage</li>
+               <li>Unlimited databases</li>
+               <li>Maximum CPU & MEM resources</li>
+               <li>Free domain for 1 year</li>
+               <li>Free Wildcard SSL certificate</li>
+               <li>Free professional email</li>
+               <li>Sitescan malware protection</li>
+               <li>Content Delivery Network (CDN)</li>
+               <li>SiteAnalytics Plus</li>
+               <li>Daily backup & recovery</li>
+             </ul>
+             <a href="#">Get Plan</a>
+           </div>
+         </div>
+       </div>
+       <style>
+         .main_body > .plans {
+            background-color: #f0f0f0;
+            padding-top: 2.5%;
+         }
+
+         .main_body > .plans > .heading > p:first-child {
+            color: #1875F9;
+            font-family: "Josefin Sans";
+            font-size: 40px;
+            font-weight: 600;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 0;
+         }
+
+         .main_body > .plans > .heading > p:nth-child(2) {
+            color: #5736ad;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 75px;
+         }
+
+         .main_body > .plans > .container {
+           display: flex;
+           flex-direction: row;
+           align-items: flex-start;
+           justify-content: space-around;
+           padding: 30px 10% 150px 10%;
+         }
+
+         .main_body > .plans > .container > .plan {
+           width: 25%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: space-around;
+           text-align: center;
+           padding: 20px 20px 50px 20px;
+           border-radius: 5px;
+           box-shadow: 0px 0px 25px #888;
+           background-color: white;
+         }
+
+         .main_body > .plans > .container > .plan:nth-child(2) {
+           background: rgb(88,54,173);
+           background: linear-gradient(0deg, rgba(88,54,173,1) 0%, rgba(25,127,248,1) 100%);
+         }
+
+         .main_body > .plans > .container > .plan > p:nth-child(1) {
+           font-family: "Josefin Sans";
+           font-weight: 600;
+           font-size: 25px;
+           color: #5736ad;
+         }
+
+         .main_body > .plans > .container > .plan > ul:nth-child(3) {
+           color: #5736ad;
+           margin-top: 0;
+           padding: 40px 20px 20px 20px;
+           font-size: 18px;
+           border-top: medium solid #f1f4fb;
+           text-align: left;
+         }
+
+         .main_body > .plans > .container > .plan > ul:nth-child(3) > li {
+           margin: 15px 0;
+         }
+
+         .main_body > .plans > .container > .plan > .pricing {
+           height: auto;
+           width: 100%;
+           position: relative;
+           bottom: 20px;
+           display: flex;
+           flex-direction: column;
+         }
+
+         .main_body > .plans > .container > .plan > .pricing > p:nth-child(1) {
+           color: #1875F9;
+           font-size: 12px;
+           font-weight: 500;
+           margin-bottom: 2px;
+           margin-left: 25%;
+           align-self: flex-start;
+           text-align: left;
+         }
+
+         .main_body > .plans > .container > .plan > .pricing > p:nth-child(2) {
+           color: #1875F9;
+           font-size: 30px;
+           font-weight: 600;
+           margin-top: 0;
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           justify-content: center;
+         }
+
+         .main_body > .plans > .container > .plan > .pricing > p:nth-child(2) > span:nth-child(1) {
+           position: relative;
+           top: 1px;
+           font-size: 15px;
+           font-weight: 500;
+           align-self: flex-start;
+           padding-right: 2px;
+         }
+
+         .main_body > .plans > .container > .plan > .pricing > p:nth-child(2) > span:nth-child(2) {
+           font-size: 15px;
+           font-weight: 500;
+           align-self: flex-end;
+         }
+
+         .main_body > .plans > .container > .plan:nth-child(2) > .pricing > p,
+         .main_body > .plans > .container > .plan:nth-child(2) > p:nth-child(1),
+         .main_body > .plans > .container > .plan:nth-child(2) > ul:nth-child(3) {
+            color: #fff !important;
+         }
+
+         .main_body > .plans > .container > .plan:nth-child(2) > ul:nth-child(3) {
+            border-top: medium solid #4946bd !important;
+         }
+
+         .main_body > .plans > .container > .plan > a {
+           width: 80px;
+           text-decoration: none;
+           font-family: "Josefin Sans";
+           text-align: center;
+           color: white;
+           background-color: #D1088B;
+           padding: 8px;
+           border-radius: 20px;
+         }
+
+         @media only screen and (max-width:1000px) {
+           .main_body > .plans > .container {
+             flex-direction: column;
+             align-items: center;
+           }
+
+           .main_body > .plans > .container > .plan {
+             margin: 20px;
+             width: 60%;
+           }
+
+           .main_body > .plans > .heading > p:first-child {
+              font-size: 30px;
+           }
+
+           .main_body > .plans > .heading > p:nth-child(2) {
+              margin-bottom: 0;
+           }
+
+           .main_body > .plans > .container > .plan > ul:nth-child(3) {
+             font-weight: 500;
+           }
+         }
+
+         @media only screen and (max-width:600px) {
+           .main_body > .plans > .container > .plan {
+             width: 75%;
+           }
+         }
+       </style>
+       <div class="hosting_features">
+         <div class="title">
+           <h3>What sets Prometheus web hosting apart?</h3>
+           <p>Powerful products for agencies and resellers</p>
+         </div>
+         <div class="container">
+           <div class="feature">
+             <div class="image">
+               <img src="./security.svg" alt="security.svg">
+             </div>
+             <p>For reliable protection of your website visitors and to increase your Google ranking, one Wildcard SSL certificate is included with your initial contract.</p>
+           </div>
+           <div class="feature">
+             <div class="image">
+               <img src="./speed.svg" alt="speed.svg">
+             </div>
+             <p>Fast page load times thanks to web servers running the HTTP/2 network protocol with multiplexing and header compression for SSL encrypted traffic.</p>
+           </div>
+           <div class="feature">
+             <div class="image">
+               <img src="./subdomains.svg" alt="subdomains.svg">
+             </div>
+             <p>Up to 10,000 subdomains to customize and structure your website, for example: news.mycompany.com.</p>
+           </div>
+           <div class="feature">
+             <div class="image">
+               <img src="./uptime.svg" alt="uptime.svg">
+             </div>
+             <p>99.99% uptime will keep your project online and result in fewer outages.</p>
+           </div>
+           <div class="feature">
+             <div class="image">
+               <img src="./dedicated-hosting.svg" alt="dedicated-hosting.svg">
+             </div>
+             <p>The best of both worlds. Enjoy world-class performance with powerful dedicated hardware, bandwidth and processing power, without having to worry about server administration.</p>
+           </div>
+           <div class="feature">
+             <div class="image">
+               <img src="./virtualization.svg" alt="virtualization.svg">
+             </div>
+             <p>Our virtual private servers are fully virtualized for more isolation, autonomy, and security.</p>
+           </div>
+         </div>
+       </div>
+       <style>
+         .main_body > .hosting_features > .title > h3 {
+           font-size: 40px;
+           text-align: center;
+           color: #4d4d4d;
+         }
+
+         .main_body > .hosting_features > .title > p {
+           text-align: center;
+           color: #4d4d4d;
+           font-size: 20px;
+           font-weight: 500;
+         }
+         .main_body > .hosting_features > .container {
+           height: auto;
+           width: 80%;
+           padding: 20px 10%;
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           justify-content: space-around;
+           flex-wrap: wrap;
+         }
+
+         .main_body > .hosting_features > .container > .feature {
+           height: auto;
+           width: 20%;
+           padding: 5%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+         }
+
+         .main_body > .hosting_features > .container > .feature > .image {
+           height: auto;
+           width: 30%;
+           padding: 5%;
+         }
+
+         .main_body > .hosting_features > .container > .feature > p {
+           font-size: 18px;
+           text-align: center;
+         }
+
+         @media only screen and (max-width:1000px) {
+           .main_body > .hosting_features > .title {
+             margin: 5%;
+           }
+
+           .main_body > .hosting_features > .container > .feature {
+             width: 30%;
+           }
+         }
+       </style>
+       <div class="php_extended">
+         <div class="title">
+           <h3>Now supporting legacy PHP versions</h3>
+           <p>Eliminate downtimes from upgrade or migration issues!</p>
+         </div>
+         <div class="container">
+           <div class="text">
+             <p>PHP EXTENDED SUPPORT</p>
+             <p>Keep using older PHP versions with PHP Extended Support</p>
+             <p>Versions 4.0, 5.2, 5.4, 5.6, 7, 7.1 and 7.2 are all supported, saving you the hassle of upgrading. If
+               you’re a new customer using an old PHP version, simply transfer your website to Prometheus and select
+               PHP Extended Support when you purchase a plan.</p>
+            <a href="#">Get Started</a>
+           </div>
+           <div class="image">
+             <img src="./php_extended.svg" alt="php_extended.svg">
+           </div>
+         </div>
+       </div>
+       <style>
+          .main_body > .php_extended {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+          }
+
+          .main_body > .php_extended > .title > h3 {
+             /* font-size: 40px;
+             text-align: center;
+             color: #4d4d4d; */
+             /* width: max-content; */
+             margin: 50px 5% 0 5%;
+             padding: 5px 15px;
+             background-color: #9018A1;
+             color: white;
+             font-family: "Advent Pro";
+             font-size: 40px;
+             font-weight: 700;
+             text-align: center;
+             border-radius: 5px;
+           }
+
+           .main_body > .php_extended > .title > p {
+             text-align: center;
+             color: #4d4d4d;
+             font-size: 20px;
+             font-weight: 500;
+           }
+
+          .main_body > .php_extended > .container {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0 10% 100px 10%;
+          }
+
+          .main_body > .php_extended > .container > .image {
+            height: auto;
+            width: 40%;
+          }
+
+          .main_body > .php_extended > .container > .image > img {
+            height: auto;
+            width: 100%;
+          }
+
+          .main_body > .php_extended > .container > .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            width: 40%;
+            padding: 5%;
+          }
+
+          .main_body > .php_extended > .container > .text > p:first-child {
+            margin: 0 0 30px 0;
+            color: #D1088B;
+            font-family: "Josefin Sans";
+            font-size: 35px;
+            font-weight: 600;
+          }
+
+          .main_body > .php_extended > .container > .text > p:nth-child(2) {
+            margin: 0;
+            color:  #1875F9;
+            font-size: 22px;
+            font-weight: 600;
+          }
+
+          .main_body > .php_extended > .container > .text > p:nth-child(3) {
+            color: #4D4D4D;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 150%;
+          }
+
+          .main_body > .php_extended > .container > .text > a {
+            align-self: flex-end;
+            width: 80px;
+            text-decoration: none;
+            font-family: "Josefin Sans";
+            text-align: center;
+            color: white;
+            background-color: #D1088B;
+            padding: 7px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 3px #D1088B;
+          }
+
+          @media only screen and (max-width:1000px)  {
+            .main_body > .php_extended > .container {
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-around;
+              padding: 5%;
+            }
+
+            .main_body > .php_extended > .container > .image {
+              width: 60%;
+              margin-bottom: 10%;
+            }
+
+            .main_body > .php_extended > .container > .text {
+              height: 100%;
+              width: 70%;
+            }
+          }
+       </style>
+       <div class="footer">
+         <div class="company">
+           <p>Company</p>
+           <a href="#">Services</a>
+           <a href="#">Contact Us</a>
+           <div class="social">
+             <a href="#"><img src="../../footer/facebook.svg" alt="facebook.svg"></a>
+             <a href="#"><img src="../../footer/twitter.svg" alt="twitter.svg"></a>
+             <a href="#"><img src="../../footer/linkedin.svg" alt="linkedin.svg"></a>
+           </div>
+         </div>
+         <div class="services">
+           <p>Services</p>
+           <a href="#">Web Hosting</a>
+           <a href="#">VPS Server</a>
+           <a href="#">Dedicated Server</a>
+         </div>
+         <div class="others">
+           <p>Others</p>
+           <a href="#">Domain Transfer</a>
+           <a href="#">Deploy Now</a>
+           <a href="#">Plex Portal</a>
+           <a href="#">CPanel Portal</a>
+         </div>
+         <div class="contact">
+           <p>Contact</p>
+           <a href="#"><span><img src="../../footer/phone.svg" alt="phone.svg"></span><span>002-0356-4589</span></a>
+           <a href="#"><span><img src="../../footer/email.svg" alt="email.svg"></span><span>prometheus@gmail.com</span></a>
+           <a href="#"><span><img src="../../footer/location.svg" alt="location.svg"></span><span>Somewhere in Africa</span></a>
+         </div>
+       </div>
+       <style>
+         .main_body > .footer {
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           width: 80%;
+           padding: 100px 10%;
+           background-image: url("../../circle-scatter.svg");
+           background-repeat: no-repeat;
+           background-size: cover;
+         }
+
+         .main_body > .footer > div {
+           width: 20%;
+         }
+
+         .main_body > .footer > div > p:first-child {
+           width: 50%;
+           color: white;
+           font-family: "Josefin Sans";
+           font-size: 20px;
+           font-weight: 700;
+           border-bottom: solid 3px #4946bd;
+         }
+
+         .main_body > .footer > div > a {
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           color: white;
+           text-decoration: none;
+           padding: 7px 0;
+           font-weight: 500;
+         }
+
+         .main_body > .footer > .company > .social {
+           width: 40%;
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           justify-content: space-between;
+           margin-top: 20px;
+         }
+
+         .main_body > .footer > .company > .social > a > img,
+         .main_body > .footer > .contact > a > span > img {
+           width: 20px;
+         }
+
+         .main_body > .footer > .contact > a > span:first-child {
+           margin-right: 15px;
+         }
+
+         @media only screen and (max-width:1000px) {
+           .main_body > .footer > .contact {
+             display: none;
+           }
+         }
+       </style>
+     </div>
+  </body>
+</html>
