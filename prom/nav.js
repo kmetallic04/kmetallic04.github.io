@@ -1,5 +1,5 @@
 const navigation = document.querySelector(".header_nav > .header > nav");
-const headerContainer = document.querySelector(".header_nav > .header > .container")
+const headerContainer = document.querySelector(".header_nav > .header > .container");
 const mobileNav = document.querySelector(".header_nav > .header > .menu_button");
 
 navBottom = navigation.offsetTop + navigation.offsetHeight;
