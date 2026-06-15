@@ -39,10 +39,6 @@ pagination.pagerSize = 10
   [params.profileMode]
     enabled = true
     title = "Phantom Reads"
-    imageUrl = "/img/kevo.jpg"
-    imageTitle = "Phantom Reads"
-    imageWidth = 150
-    imageHeight = 150
 
     [[params.profileMode.buttons]]
       name = "Posts"
