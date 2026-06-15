@@ -7,7 +7,7 @@ ShowShareButtons: false
 ShowBreadCrumbs: false
 ---
 
-I'm Kevin. I hold a Bachelors Degree in Electrical and Electronic Engineering. I enjoy crafting software, and I have the grit to see through complex solutions.
+Hey, I’m Kevin! Code enthusiast, focused on data and platform infrastructure. I also love building financial products. Let's connect!
 
 **Phantom Reads** is where I write about engineering, systems, and whatever I'm currently building.
 
