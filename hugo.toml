@@ -39,6 +39,7 @@ pagination.pagerSize = 10
   [params.profileMode]
     enabled = true
     title = "Phantom Reads"
+    subtitle = "I'm Kevin. I hold a Bachelors Degree in Electrical and Electronic Engineering. I enjoy crafting software, and I have the grit to see through complex solutions."
 
     [[params.profileMode.buttons]]
       name = "Posts"
